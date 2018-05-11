@@ -1,0 +1,654 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Techrep</title>
+<meta name="description" content="">
+<meta name="author" content="">
+
+<!-- Favicons
+    ================================================== -->
+<link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+<link rel="apple-touch-icon" href="img/apple-touch-icon.png">
+<link rel="apple-touch-icon" sizes="72x72" href="img/apple-touch-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="114x114" href="img/apple-touch-icon-114x114.png">
+
+<!-- Bootstrap -->
+<link rel="stylesheet" type="text/css"  href="css/bootstrap.css">
+<link rel="stylesheet" type="text/css" href="fonts/font-awesome/css/font-awesome.css">
+
+<!-- Stylesheet
+    ================================================== -->
+<link rel="stylesheet" type="text/css"  href="css/style.css">
+<link rel="stylesheet" type="text/css" href="css/prettyPhoto.css">
+<link href='http://fonts.googleapis.com/css?family=Lato:400,700,900,300' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700,800,600,300' rel='stylesheet' type='text/css'>
+<script type="text/javascript" src="js/modernizr.custom.js"></script>
+
+<!--Home-->
+    
+    <link rel="stylesheet" href="stylemain.css">
+    <link rel='stylesheet prefetch' href='https://fonts.googleapis.com/css?family=Montserrat:300,400,700'>
+   
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+      
+    
+    
+    
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    
+    
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+    <script>
+   function myFunction() {
+    setTimeout(showPage, 1000);
+}
+
+function showPage() {
+  document.getElementById("cupcake").style.opacity = "0";
+    document.getElementById("cupcake").style.zIndex = "2";
+    
+   document.getElementById("body").style.display= "block";
+    document.getElementById("body").style.opacity = "1";
+    
+}
+    </script>
+
+    <style type="text/css">
+      * {
+  box-sizing: border-box;
+}
+
+
+
+.cardContainer {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 0px;
+
+}
+
+.mmCard {
+  width: 400px;
+  padding: 20px;
+  border-radius: 3px;
+  position: relative;
+  margin: 10px;
+}
+
+.mmCardVid {
+  width: 100%;
+  display: block;
+  height: auto;
+  max-height: 250px;
+  border-radius: 3px 3px 0px 0px;
+}
+
+iframe.mmCardVid {
+  height: 250px;
+  border: 0;
+}
+
+.mmCard h3 {
+  text-align: center;
+  display: block;
+  font-size: 20px;
+  color: #333333;
+  text-transform: uppercase;
+  margin: 10px 0;
+  padding: 5px;
+}
+
+.cardActionBar {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 40px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: flex-end;
+  border-radius: 0px 0px 3px 3px;
+  padding: 2px;
+  margin: 0;
+}
+
+.cardAction {
+  color: #F63E37;
+  background-color: #F2F1F1;
+  text-decoration: none;
+  cursor: pointer;
+  font-size: 100%;
+  border-radius: 3px;
+  height: 100%;
+  width: 30%;
+  text-align: center;
+  overflow: hidden;
+  cursor: pointer;
+  display: block;
+  user-select: none;
+  padding: 5px 0;
+  margin-left: 2px;
+}
+
+.cardAction:hover {
+  background-color: #E3EBF1;
+  text-decoration: none;
+}
+
+.cardAction:active {
+  color: 333333;
+  animation-name: transition;
+  animation-duration: .5s;
+  background-color: #cccccc;
+  text-decoration: none;
+}
+
+@-webkit-keyframes transition {
+  0% {
+    background-color: #cccccc;
+    color: #333333;
+  }
+  50% {
+    background-color: #7BB9E0;
+    color: #000000;
+  }
+  100% {
+    background-color: #cccccc;
+    color: #333333;
+  }
+}
+
+@keyframes transition {
+  0% {
+    background-color: #cccccc;
+    color: #333333;
+  }
+  50% {
+    background-color: #7BB9E0;
+    color: #000000;
+  }
+  100% {
+    background-color: #cccccc;
+    color: #333333;
+  }
+}
+
+.bBeige {
+  background-color: white;
+  /*border-style: solid;*/
+  border-color: 1dba9b;
+  color: #333333;
+}
+
+
+.shadow2s, .shadow2a{
+  box-shadow: 0px 0px 2px 1px rgba(0, 0, 0, .15), 1px 1px 1px rgba(0, 0, 0, .5);
+  transform: translate3d(0px, 0px, 2px);
+  -webkit-transform: translate3d(0px, 0px, 2px);
+  -moz-transform: translate3d(0px, 0px, 2px);
+  -ms-transform: translate3d(0px, 0px, 2px);
+}
+
+.shadow4s, .shadow4a{
+  box-shadow: 0px 0px 6px 2px rgba(0, 0, 0, .15), 1px 2px 2px rgba(0, 0, 0, .5);
+  transform: translate3d(0px, 0px, 4px);
+  -webkit-transform: translate3d(0px, 0px, 2px);
+  -moz-transform: translate3d(0px, 0px, 2px);
+  -ms-transform: translate3d(0px, 0px, 2px);
+}
+
+.shadow6s, .shadow6a
+.shadow2a:hover {
+  box-shadow: 0px 0px 9px 3px rgba(0, 0, 0, .15), 2px 3px 3px rgba(0, 0, 0, .5);
+  transform: translate3d(0px, 0px, 6px);
+  -webkit-transform: translate3d(0px, 0px, 2px);
+  -moz-transform: translate3d(0px, 0px, 2px);
+  -ms-transform: translate3d(0px, 0px, 2px);
+}
+
+.shadow8s, .shadow8a,
+.shadow4a:hover {
+  box-shadow: 0px 0px 13px 4px rgba(0, 0, 0, .15), 3px 4px 4px rgba(0, 0, 0, .5);
+  transform: translate3d(0px, 0px, 8px);
+  -webkit-transform: translate3d(0px, 0px, 2px);
+  -moz-transform: translate3d(0px, 0px, 2px);
+  -ms-transform: translate3d(0px, 0px, 2px);
+}
+
+.shadow6a:hover,
+.shadow2a:active {
+  box-shadow: 0px 0px 18px 6px rgba(0, 0, 0, .15), 3px 5px 5px rgba(0, 0, 0, .5);
+  transform: translate3d(0px, 0px, 10px);
+  -webkit-transform: translate3d(0px, 0px, 2px);
+  -moz-transform: translate3d(0px, 0px, 2px);
+  -ms-transform: translate3d(0px, 0px, 2px);
+}
+
+.shadow8a:hover,
+.shadow4a:active {
+  box-shadow: 0px 0px 22px 7px rgba(0, 0, 0, .15), 4px 6px 6px rgba(0, 0, 0, .5);
+  transform: translate3d(0px, 0px, 12px);
+  -webkit-transform: translate3d(0px, 0px, 2px);
+  -moz-transform: translate3d(0px, 0px, 2px);
+  -ms-transform: translate3d(0px, 0px, 2px);
+}
+
+.shadow6a:active {
+  box-shadow: 0px 0px 27px 9px rgba(0, 0, 0, .15), 5px 7px 7px rgba(0, 0, 0, .5);
+  transform: translate3d(0px, 0px, 14px);
+  -webkit-transform: translate3d(0px, 0px, 2px);
+  -moz-transform: translate3d(0px, 0px, 2px);
+  -ms-transform: translate3d(0px, 0px, 2px);
+}
+
+.shadow8a:active {
+  box-shadow: 0px 0px 32px 11px rgba(0, 0, 0, .15), 5px 8px 8px rgba(0, 0, 0, .5);
+  transform: translate3d(0px, 0px, 16px);
+  -webkit-transform: translate3d(0px, 0px, 2px);
+  -moz-transform: translate3d(0px, 0px, 2px);
+  -ms-transform: translate3d(0px, 0px, 2px);
+}
+
+
+
+    </style>
+<!--EndHome>
+
+<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body onload="myFunction()">
+<!-- Navigation
+    ==========================================-->
+<nav id="navbar">
+
+<div id="mySidenav" class="sidenav">
+ <div id="menu-item">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  
+  <a href="index.html" active>Home</a>
+  
+  <p tabindex="0" onclick="events()" style="outline:none">Events <i class="material-icons" style="float:right;margin-right:10px;">arrow_drop_down</i></p>
+  <div class="submenu-list" id="events-submenu">
+    <a href="">Lecture Series</a>
+    <a href=""> Industrial Conclave</a>
+    <a href="">Lecture Series</a>
+    <a href=""> Industrial Conclave</a>
+    
+  </div>
+    
+    
+  
+  <p tabindex="0" onclick="competitions()" style="outline:none" autofocus>Competitions <i class="material-icons" style="float:right;margin-right:10px;">arrow_drop_down</i></p>
+  
+<div class="submenu-list" id="competitions-submenu">
+    <a href="">Lecture Series</a>
+    <a href=""> Industrial Conclave</a>
+    <a href="">Lecture Series</a>
+    <a href=""> Industrial Conclave</a>
+ </div>
+
+  <p tabindex="0" onclick="workshops()" style="outline:none">Workshops <i class="material-icons" style="float:right;margin-right:10px;">arrow_drop_down</i></p>
+  <div class="submenu-list" id="workshops-submenu">
+    <a href="">Lecture Series</a>
+    <a href=""> Industrial Conclave</a>
+    <a href="">Lecture Series</a>
+    <a href=""> Industrial Conclave</a>
+    <a href="">Lecture Series</a>
+    <a href=""> Industrial Conclave</a>
+    <a href="">Lecture Series</a>
+    <a href=""> Industrial Conclave</a>
+ </div>
+  <a href="#">GHM</a>
+  <a href="#">Initiatives</a>
+  
+</div>
+</div>
+
+<div style="padding-top:15px;padding-left:20px;display:inline-block;position:relative;" onclick="openNav()"> 
+   <a onclick="openNav()" id="menu-btn"> 
+       <span class="bar" id="bar1"></span>
+        <span class="bar" id="bar2"></span>
+        <span class="bar"></span>
+    </a>
+
+</div>
+
+<div class="logo" id="logo">
+    <a href="">
+        <img src="img/Logo_Techniche2018_.png" alt="techniche">
+    </a>
+</div>
+<div style="display: :inline-block;float: right">
+<span style="float:right; padding:15px;padding-right:5vw"><a data-toggle="collapse" href="#notif" role="button" aria-expandable="true" aria-controls="notif"><i class="material-icons" id="notification">notifications</i></a></span>
+<div class="collapse" id="notif">
+  <h5>I am here</h5>  
+</div>
+</div>
+
+</nav>
+
+<!--Navbar End-->
+
+<!-- Header -->
+<header class="text-center" name="home">
+  <div class="intro-text">
+    <h1 style="    font-family: 'Chelsea Market', Georgia, serif;
+    text-transform: lowercase;">Lecture Series </h1>
+    <p>Conglomeration of Excellence</p>
+    <h4></h4>
+</header>
+
+<!-- About Section -->
+<div id="about-section">
+  <div class="container">
+    <div class="section-title text-center center">
+      <h2>ABOUT US</h2>
+      <hr>
+      <div class="clearfix"></div>
+    </div>
+    <div class="row">
+      <div class="col-md-6"> <img src="img/about.jpg" class="img-responsive"> </div>
+      <div class="col-md-6">
+        <div class="about-text">
+          <br><br><p style="font-weight: 400; font-size: 20px;">Techniche is the annual Techno-Management festival of IIT Guwahati, India. The lecture series serves as a platform to inspire an dmotivate tousands of young minds across the world by connecting them with pioneers in various fields</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Achievements Section -->
+
+<div class="section-title center text-center">
+      <h2>Previous Year Speakers</h2>
+      <hr>
+      <!-- <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diamcommodo nibh ante facilisis.</p> -->
+</div>
+<div class="cardContainer">
+
+  <div class="mmCard shadow4a bBeige">
+   <div><img style="height: 250px;width: 320px; margin-left: 18px; border-radius: 5px;" src="img/TomBarclay.jpg"></div>
+    <h3>Thomas Barclay</h3>
+    <div>
+       <strong>Research Scientist, NASA; Deputy Director, TESS Science Support Center:</strong>
+Dr. Tom Barclay is the principal Investigator and Director of the Kepler/K2 Guest Observer Office and is an expert in data analytics from space and ground based telescopes that had led to discovery of the smallest known planet and the super earth sized planet orbiting in the habitable zone of a sun like star
+    </div>
+  </div>
+
+  <div class="mmCard shadow4a bBeige">
+    <div><img style="height: 250px;width: 320px; margin-left: 18px; border-radius: 5px;" src="img/NedSeeman.jpg"></div>
+<h3>Nadrian Seeman</h3>
+    <div>
+      <strong>Inventor of the field of DNA Nanotechnology, Feynmann Prize winner:</strong>
+An american chemist and crystallographer, Nadrian Seeman, is credited for the invention of DNA nanotechnology, revolutionizing genetics. An Awardee of the Kavli Prize and the Feynman Prize, his research paved the way for further applications in the fields of DNA Computing, DNA Nanorobotics and Nanoelectronics
+
+    </div>
+    
+  </div>
+
+
+ 
+  <div class="mmCard shadow4a bBeige">
+    
+    <div><img style="height: 250px;width: 320px; margin-left: 18px; border-radius: 5px;" src="img/Brooks Moore.png"></div>
+       <h3> Brooks Moore</h3>
+    <div>
+      <strong>Host of How It’s Made, Emmy Winner:</strong>
+A winner of multiple Emmy, Telly and Sundace awards, Brooks Turner Moore is the person whose voice we all grew up hearing on all our favourite shows on Discovery Channel and its related networks. His most prominent work as a narrator in for the well known show "How it's made".
+
+    </div>
+  </div>  
+
+  <div class="mmCard shadow4a bBeige">
+    
+    <div><img style="height: 250px;width: 320px; margin-left: 18px; border-radius: 5px;" src="img/Mike_Morasky.jpg"></div>
+    <h3>Mike Morasky</h3>
+    <div>
+ <strong>Visual Effects Supervisor, The Lord of the Rings and the Matrix; Music Composer, CS:GO:</strong>
+An animator, AV effects artist, director and programmer, Mike Morasky is best known for his work at Valve Corporations composing the scores of Portal, Portal 2 and the Left 4 Dead Series. He visual effects work on the infamous Lord of The Rings and The Matrix trilogies are also world famous.
+    </div>
+  </div>  
+
+  <div class="mmCard shadow4a bBeige">
+
+    <div><img style="height: 250px;width: 320px; margin-left: 18px; border-radius: 5px;" src="img/P4rabhu.jpg"></div>
+    <h3>Shri Suresh Prabhu</h3>
+    <div>
+<strong>Ex-Railway Minister of India:</strong>
+Suresh Prabhakar Prabhu is an Indian politician and the former Railway Minister of India. A Chartered Accountant by profession, Mr Prabhu was an elected member of the World Bank parliamentary network, chaired the South Asia Water regional group of the World Bank and had won great praise for his performance as the Union Minister for Power.
+</div>
+  </div>
+
+  <div class="mmCard shadow4a bBeige">
+
+    <div><img style="height: 250px;width: 320px; margin-left: 18px; border-radius: 5px;" src="img/Swamy.jpg"></div>
+    <h3>Shri Subramanian Swamy</h3>
+    <div>
+      <strong> Member of Rajya Sabha, Harvard Professor and Economist:</strong>
+An economist, mathematician and a politician, Mr. Subramanian Swamy is a Member of Parliment in Rajya Sabha and a member of the BJP. A Harvard alumnus, Mr. Swamy was a part of the group of eminent persons called to Geneva, Switzerland to prepare a report of the United Nations on Economic Co-operation between Developing countries.
+
+
+    </div>
+
+  </div>
+</div>
+
+
+<!-- Team Section -->
+<div id="team-section" class="text-center">
+  <div class="container">
+    <div class="section-title center">
+      <h2>Meet the Team</h2>
+      <hr>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diamcommodo nibh ante facilisis.</p>
+    </div>
+    <div id="row">
+      <div class="col-md-3 col-sm-6 team">
+        <div class="thumbnail"> <img src="img/team/01.jpg" alt="..." class="img-circle team-img">
+          <div class="caption">
+            <h3>John Doe</h3>
+            <p>Founder / CEO</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3 col-sm-6 team">
+        <div class="thumbnail"> <img src="img/team/02.jpg" alt="..." class="img-circle team-img">
+          <div class="caption">
+            <h3>Mike Doe</h3>
+            <p>Web Designer</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3 col-sm-6 team">
+        <div class="thumbnail"> <img src="img/team/03.jpg" alt="..." class="img-circle team-img">
+          <div class="caption">
+            <h3>Jane Doe</h3>
+            <p>Creative Director</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3 col-sm-6 team">
+        <div class="thumbnail"> <img src="img/team/04.jpg" alt="..." class="img-circle team-img">
+          <div class="caption">
+            <h3>Larry Show</h3>
+            <p>Project Manager</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Contact Section -->
+<div id="contact-section" class="text-center">
+  <div class="container">
+    <div class="section-title center">
+      <h2>Contact Us</h2>
+      <hr>
+      <p>Let us know about your query.</p>
+    </div>
+    <div class="col-md-8 col-md-offset-2">
+      <div class="col-md-4"> <a href="https://www.google.co.in/maps/place/Indian+Institute+of+Technology+Guwahati/@26.1902523,91.6920239,15z/data=!4m5!3m4!1s0x0:0xbf481e3cfc490e1!8m2!3d26.1902523!4d91.6920239" target="_balnk"><i class="fa fa-map-marker"></i></a>
+        <p>IIT Guwahati,<br>
+          781039 ,Guwahati, Assam</p>
+      </div>
+      <div class="col-md-4"> <i class="fa fa-envelope-o"></i>
+        <p>lectureseries@techniche.org</p>
+      </div>
+      <div class="col-md-4"> <i class="fa fa-phone"></i>
+        <p>9462747129</p>
+      </div>
+      <div class="clearfix"></div>
+      <hr>
+    </div>
+  </div>
+</div>
+</div>
+<div id="social-section">
+  <div class="container">
+    <div class="social">
+      <ul>
+        <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+        <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+        <li><a href="#"><i class="fa fa-dribbble"></i></a></li>
+        <li><a href="#"><i class="fa fa-github"></i></a></li>
+        <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+        <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+      </ul>
+    </div>
+  </div>
+</div>
+<div id="footer">
+  <div class="container">
+    <div class="fnav">
+      <p>Copyright &copy; Techniche 2018.</p>
+    </div>
+  </div>
+</div>
+
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script type="text/javascript" src="js/jquery.1.11.1.js"></script>
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script type="text/javascript" src="js/bootstrap.js"></script>
+<script type="text/javascript" src="js/SmoothScroll.js"></script>
+<script type="text/javascript" src="js/jquery.counterup.js"></script>
+<script type="text/javascript" src="js/waypoints.js"></script>
+<script type="text/javascript" src="js/jquery.prettyPhoto.js"></script>
+<script type="text/javascript" src="js/jquery.isotope.js"></script>
+<script type="text/javascript" src="js/jqBootstrapValidation.js"></script>
+<script type="text/javascript" src="js/contact_me.js"></script>
+
+<!-- Javascripts
+    ================================================== -->
+<script type="text/javascript" src="js/main.js"></script>
+
+
+<script src="js/jquery-2.1.4.js"></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.2/TweenMax.min.js'></script>
+<script src="js/blinds.js"></script>
+
+
+
+
+<script>
+    
+
+function openNav() {
+    document.getElementById("mySidenav").style.width = "250px";
+}
+
+function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+    document.getElementsByClassName("submenu").style.height = "0" ;
+    
+}
+    
+$(document).ready(function(){
+  initialize();
+});
+    
+    
+  
+        
+
+var scrolpos = 0;
+var navbar =  document.getElementById('navbar');
+var logobg = document.getElementById('logo');
+var menuBars = document.getElementsByClassName('bar');
+
+    
+ 
+    window.addEventListener('scroll',function(){
+        
+        
+      // document.getElementById('background').style.top = '0px';
+        
+        scrolpos = window.scrollY; 
+        var i = 0;
+        
+     
+        
+       if(scrolpos>80){
+           navbar.style.backgroundColor = '#ffffff';
+         navbar.style.borderBottom = '2px solid #1dba9b';
+        logo.style.backgroundColor = '#ffffff';
+           logo.style.borderBottom = '2px solid #1dba9b';
+           document.getElementById('notification').style.color = '#1dba9b';
+           
+          
+    for (i = 0; i < menuBars.length; i++) {
+    menuBars[i].style.backgroundColor = "#1dba9b";
+}
+            
+           
+        }
+        else{
+          navbar.style.backgroundColor = 'transparent';
+          navbar.style.borderBottom = 'none';
+          logo.style.backgroundColor = 'transparent';
+            
+          /*  for (i = 0; i < menuBars.length; i++) {
+    menuBars[i].style.backgroundColor = "#ffffff";
+}
+   */         
+           
+           
+           
+        } 
+        
+               
+      if(scrolpos >= 1500){
+           // document.getElementById("mySidenav").style.width = "250px";
+        }
+        else{
+            document.getElementById("mySidenav").style.width = "0";
+        }
+        
+        }
+    )
+    
+   
+    
+</script>
+<script src="main.js"></script>
+
+
+
+</body>
+</html>
